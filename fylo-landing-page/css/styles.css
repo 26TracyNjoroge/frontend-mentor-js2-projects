@@ -1,0 +1,158 @@
+:root {
+    --intro-email: hsl(217, 28%, 15%);
+    --main-background: hsl(218, 28%, 13%);
+    --footer-background: hsl(216, 53%, 9%);
+    --testimonials-background: hsl(219, 30%, 18%);
+
+    /*Accent*/
+    --call-to-action-teal: hsl(176, 68%, 64%);
+    --call-to-action-cyan: hsl(198, 60%, 50%);
+    --error: hsl(0, 100%, 63%);
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+}
+
+*,
+*::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2,
+h3, h4,
+h5, h6 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-wrap: balance; 
+} 
+
+p,
+li,
+figcaption {
+    max-width: 65ch;
+    text-wrap: pretty;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+img,
+picture,
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/raleway-v37-latin/raleway-v37-latin-regular.woff2') 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/raleway-v37-latin/raleway-v37-latin-700.woff2') 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/open-sans-v44-latin/open-sans-v44-latin-regular.woff2') 
+}
+/* open-sans-700 - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/open-sans-v44-latin/open-sans-v44-latin-700.woff2')
+}
+
+body {
+    font-size: 0.875 rem;
+ 
+}
+
+.fylo-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.6rem;
+}
+
+.fylo-logo {
+    width: 82px;
+    height: 24px;
+}
+
+.nav-bar-links {
+    list-style: none;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 0.8rem;
+    font-family: "Open Sans", serif;
+    font-weight: 400;
+}
+
+
+.hero {
+   background: url(/assets/images/bg-curvy-mobile.svg) bottom no-repeat;
+    background-color: var(--intro-email) ;
+    min-height: 100vh;
+    text-align: center;
+    color: var(--White);
+}
+
+.hero-content { 
+    width: 84%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.illustration-intro {
+    margin-bottom: 1.8rem;
+} 
+
+.hero-content {
+    font-family: "Raleway",serif;
+}
+
+.content-heading {
+    font-family: "Raleway",serif;
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+    line-height: 2.4rem;
+}
+
+.content-details {
+    font-size: 0.89rem;
+    line-height: 1.1rem;
+    margin-bottom: 1.7rem;
+}
+
+.cta-button {
+    padding: 1.2em;
+    background-color: var(--call-to-action-cyan);
+    border-radius: 2.1rem;
+    width: 80%;
+}
