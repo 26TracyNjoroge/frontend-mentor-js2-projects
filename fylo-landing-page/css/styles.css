@@ -359,15 +359,31 @@ footer {
 .email {
     display: flex;
     align-items: flex-start;
-    padding: 5px 10px;
-    gap: 14px;
+    gap: 1.2rem;
     margin-bottom: 1rem;
-    font-family: "Raleway",serif;
-    font-size: 1.2rem;
-}
+    }
+
 
 .location-section {
-    margin-bottom: 4rem;
+    font-family: 'Open Sans', sans-serif;
+    padding: 1.5rem 1.5rem 1.5rem 0;
+    max-width: 400px;
+    margin-bottom: 2rem;
+}
+
+
+.location img,
+.phone img,
+.email img {
+    flex-shrink: 0;
+    margin-top: 4px; 
+}
+
+.location p,
+.phone p,
+.email p {
+    font-size: 1.2rem;
+    line-height: 1.5;
 }
 
 .footer-column {
