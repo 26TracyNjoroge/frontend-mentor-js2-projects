@@ -26,7 +26,6 @@ h3, h4,
 h5, h6 {
     word-wrap: break-word;
     overflow-wrap: break-word;
-    text-wrap: balance; 
 } 
 
 p,
@@ -91,7 +90,7 @@ body {
 .fylo-nav {
     display: flex;
     justify-content: space-between;
-    padding: 2.6rem;
+    padding: 2.6rem 1.5rem;
 }
 
 .fylo-logo {
@@ -102,14 +101,18 @@ body {
 .nav-bar-links {
     list-style: none;
     display: flex;
-    justify-items: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 0.8rem;
-    font-size: 0.8rem;
+    gap: 20px;
+    font-size: 1rem;
     font-family: "Open Sans", serif;
     font-weight: 400;
 }
 
+.nav-link {
+  flex: 1; 
+  white-space: nowrap;
+}
 
 .hero {
    background: url(/assets/images/bg-curvy-mobile.svg) bottom no-repeat;
@@ -140,14 +143,14 @@ body {
 .content-heading {
     font-family: "Raleway",serif;
     font-size: 1.6rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.3rem;
     line-height: 2.4rem;
 }
 
 .content-details {
     font-size: 0.89rem;
     line-height: 1.1rem;
-    margin-bottom: 1.7rem;
+    margin-bottom: 1.9rem;
 }
 
 .cta-button {
@@ -155,4 +158,249 @@ body {
     background-color: var(--call-to-action-cyan);
     border-radius: 2.1rem;
     width: 80%;
+    font-weight: 700;
 }
+
+.main-page {
+    background-color: var(--main-background);
+    color: var(--White);
+    font-family: "Raleway",serif;
+}
+
+.features {
+    width: 88%;
+    margin: 0 auto;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature-icon {
+    width: 85px;
+    height: 85px;
+    margin: 0 auto 2rem auto;
+}
+
+.feature-heading {
+    margin-bottom: 1rem;
+}
+
+.feature-detail {
+    margin-bottom: 5rem;
+    font-size: 1.05rem;
+    line-height: 1.5rem;
+}
+
+.stay-productive {
+    width: 84%;
+    margin: 9rem auto;
+    text-align: left;
+}
+
+.productive-illustration {
+    margin-bottom: 3rem;
+}
+
+.productive-heading {
+    margin-bottom: 1.2rem;
+    font-size: 1.33rem;
+}
+
+.productive-content1,
+.productive-content2 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+.how-fylo-works {
+    display: flex;
+    align-items: center; 
+    gap: 5px;
+    font-size: 1.05rem;
+    color: var(--call-to-action-teal);
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    margin-bottom: 3rem;
+}
+
+.testimonies {
+    width: 78%;
+    margin: 0 auto;
+}
+
+.quote-icon {
+    width: 36px;
+    height: 25px;
+}
+
+.testimony {
+    background-color: var(--testimonials-background);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 9px;
+}
+
+.testimony-content {
+    margin-bottom: 1.2rem;
+    font-size: 0.9rem;
+}
+
+.testimony-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+} 
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.profile-name {
+    font-size: 1rem;
+    margin-bottom: 7px;
+}
+
+.profile-title {
+    font-size: 0.8rem;
+}
+
+.cta-section {
+    position: relative;
+    z-index: 2;
+}
+
+.cta-card {
+    background-color: #1B2330;
+    padding: 30px 40px;
+    width: 88%;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+
+.cta-heading {
+    font-size: 1.4rem;
+    margin-bottom: 1.3rem;
+}
+
+.cta-content {
+    font-size: 1.05rem;
+    line-height: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.cta-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-group {
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 1.4em;
+  padding-left: 20px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+}
+
+.error-text {
+    position: absolute;
+    top: 100%;
+    left: 20px;
+    color: red;
+    font-size: 0.85rem;
+    margin-top: 4px;
+    display: none;
+}
+
+.cta-card button {
+  background: linear-gradient(to right, #65e2d9, #339ecc);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 1.4em;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+footer {
+    background-color: var(--footer-background);
+    color: var(--White);
+    padding: 165px 36px 50px;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.footer-logo {
+    width: 176px;
+    margin-bottom: 2rem;
+}
+
+.location,
+.phone,
+.email {
+    display: flex;
+    align-items: flex-start;
+    padding: 5px 10px;
+    gap: 14px;
+    margin-bottom: 1rem;
+    font-family: "Raleway",serif;
+    font-size: 1.2rem;
+}
+
+.location-section {
+    margin-bottom: 4rem;
+}
+
+.footer-column {
+    margin-bottom: 2rem;
+    font-family: "Raleway",serif;
+}
+
+.footer-links {
+    margin-bottom: 4rem;
+}
+
+.footer-column li {
+    list-style: none;
+    margin-bottom: 0.6rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-link {
+    border: 1px solid var(--White);
+    padding: 0.6em;
+    border-radius: 50%;
+    font-size: 0.7rem;
+    transition: all .3s ease-in-out;
+}
+
+.social-link:hover {
+    color: var(--call-to-action-teal);
+    border-color: var(--call-to-action-teal);
+    cursor: pointer;
+}
+
