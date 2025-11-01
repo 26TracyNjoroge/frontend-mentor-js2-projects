@@ -207,8 +207,7 @@ body {
     font-size: 1.33rem;
 }
 
-.productive-content1,
-.productive-content2 {
+.productive-content {
     margin-bottom: 1rem;
     font-size: 1.1rem;
     line-height: 1.5rem;
@@ -225,7 +224,7 @@ body {
     margin-bottom: 3rem;
 }
 
-.testimonies {
+.testimonies-section {
     width: 78%;
     margin: 0 auto;
 }
@@ -297,7 +296,7 @@ body {
     margin-bottom: 3rem;
 }
 
-.cta-card form {
+.cta-form {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -420,3 +419,187 @@ footer {
     cursor: pointer;
 }
 
+@media (min-width: 1024px) {
+    .fylo-nav {
+        padding: 4.6rem 4.7rem;
+    }
+
+    .fylo-logo {
+        width: 180px;
+        height: 50px;
+    }
+
+    .nav-bar-links {
+        gap: 1.2rem;
+    }
+
+    .hero {
+        background: url(/assets/images/bg-curvy-desktop.svg) bottom no-repeat;
+        background-color: var(--intro-email);
+    }
+
+    .illustration-intro {
+        margin-bottom: 3.4rem;
+    } 
+
+    .content-heading {
+        font-size: 2.3rem;
+        line-height: 2.9rem;
+        width: 62%;
+        margin-bottom: 2.9rem; 
+    }
+
+    .content-details {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        margin-bottom: 1.6rem;
+        width: 50%;
+    }
+
+    .cta-button {
+        width: 24%;
+        margin-bottom: 10rem;
+    }
+
+    .features {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3em;
+        width: 60%;
+    }
+
+    .feature {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 89%;
+    }
+
+    .feature-icon {
+        width: 87px;
+        height: 99px;
+        margin: 0 auto 0.5rem auto;
+    }
+
+    .feature-heading {
+        font-size: 1.4rem;
+        margin-bottom: 0;
+
+    }
+    
+    .feature-detail {
+        font-size: 0.84rem;
+        margin-bottom: 2rem;
+    }
+
+    .stay-productive {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    .productive-heading {
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+        width: 86%;
+    }
+
+    .productive-content {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .how-fylo-works {
+        margin-top: 1.3rem;
+    }
+
+    .quote-icon {
+        width: 56px;
+        height: 45px;
+    }
+
+    .testimonies-section {
+        padding: 1.2rem;
+    }
+
+    .testimonies {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .testimony-content {
+        line-height: 1.4rem;
+        font-size: 0.86rem;
+    }
+
+    .testimony-author {
+        gap: 12px;
+    } 
+
+    .profile-img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+    }
+
+    .profile-name {
+        font-size: 0.81rem;
+        margin-bottom: 3px;
+    }
+
+    .profile-title {
+        font-size: 0.6rem;
+    }
+
+    .cta-card {
+        width: 88%;
+        max-width: 860px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .cta-form {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        width: 90%;
+    }
+
+    .input-group {
+        flex: 1;
+        margin-bottom: 0;
+    }
+
+    .cta-heading {
+        font-size: 1.9rem;
+    }
+
+    .cta-content {
+        font-size: 0.96rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .footer-links-section {
+        display: flex;
+    }
+
+    .location-section {
+        display: flex;
+    }
+
+    .footer-links {
+        display: flex;
+
+    }
+
+    .social-icons {
+        display: flex;
+        align-items: flex-start;
+    }
+}
