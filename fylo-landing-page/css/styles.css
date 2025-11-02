@@ -110,8 +110,14 @@ body {
 }
 
 .nav-link {
-  flex: 1; 
-  white-space: nowrap;
+    flex: 1; 
+    white-space: nowrap;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    text-decoration: underline;
+    font-weight: 700;
 }
 
 .hero {
@@ -159,6 +165,12 @@ body {
     border-radius: 2.1rem;
     width: 80%;
     font-weight: 700;
+    transition: all .3s ease-in-out;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+    background-color: var(--call-to-action-teal);
 }
 
 .main-page {
@@ -330,13 +342,19 @@ body {
 }
 
 .cta-card button {
-  background: linear-gradient(to right, #65e2d9, #339ecc);
-  color: white;
-  border: none;
-  border-radius: 25px;
-  padding: 1.4em;
-  cursor: pointer;
-  font-weight: bold;
+    background: var(--call-to-action-cyan);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 1.4em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+}
+
+.cta-card button:hover,
+.cta-card button:focus {
+    background-color: var(--call-to-action-teal);
 }
 
 footer {
@@ -345,7 +363,6 @@ footer {
     padding: 165px 36px 50px;
     position: relative;
     z-index: 1;
-    
 }
 
 .footer-logo {
@@ -371,9 +388,7 @@ footer {
 }
 
 
-.location img,
-.phone img,
-.email img {
+.footer-icon {
     flex-shrink: 0;
     margin-top: 4px; 
 }
@@ -584,22 +599,67 @@ footer {
         font-size: 0.96rem;
         margin-bottom: 2.5rem;
     }
+    
+    footer {
+        padding-bottom: 0;
+    }
+
+    .footer-wrapper {
+        width: 98%;
+        margin: 0 auto;
+        max-width: 1380px;
+        padding-bottom: 0;
+    }
 
     .footer-links-section {
         display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 50px;
     }
 
     .location-section {
         display: flex;
+        gap: 60px;
+        max-width: 700px;
+        padding: 0;
+    }
+
+    .footer-icon {
+        margin-top: 7px;
+    }
+
+    .location p,
+    .phone p,
+    .email p {
+        font-size: 1.1rem;
     }
 
     .footer-links {
         display: flex;
+        gap: 84px;
+        padding: 0;
+    }
+
+    .footer-column a:hover,
+    .footer-column:focus {
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .footer-column li {
+        margin-bottom: 18px;
+        font-size: 1.1rem;
 
     }
 
     .social-icons {
         display: flex;
-        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .social-link {
+        padding: 0.92em;
+        font-size: 0.82rem;
     }
 }
