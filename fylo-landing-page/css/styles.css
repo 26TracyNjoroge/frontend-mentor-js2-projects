@@ -121,8 +121,9 @@ body {
 }
 
 .hero {
-   background: url(/assets/images/bg-curvy-mobile.svg) bottom no-repeat;
+    background: url(/assets/images/bg-curvy-mobile.svg) bottom no-repeat;
     background-color: var(--intro-email) ;
+    background-size: contain;
     min-height: 100vh;
     text-align: center;
     color: var(--White);
@@ -180,8 +181,9 @@ body {
 }
 
 .features {
-    width: 88%;
+    width: 60%;
     margin: 0 auto;
+    max-width: 1100px;
 }
 
 .feature {
@@ -338,7 +340,6 @@ body {
     color: red;
     font-size: 0.85rem;
     margin-top: 4px;
-    display: none;
 }
 
 .cta-card button {
@@ -434,6 +435,10 @@ footer {
     cursor: pointer;
 }
 
+.hidden {
+    display: none;
+}
+
 @media (min-width: 1024px) {
     .fylo-nav {
         padding: 4.6rem 4.7rem;
@@ -451,6 +456,8 @@ footer {
     .hero {
         background: url(/assets/images/bg-curvy-desktop.svg) bottom no-repeat;
         background-color: var(--intro-email);
+        background-size: contain;
+
     }
 
     .illustration-intro {
