@@ -173,8 +173,8 @@
           </p>
           <form class="cta-form" id="form">
             <div class="input-group">
-              <input type="email" id="email" name="email" placeholder="email@example.com"/>
-              <p class="error-text hidden">Please enter a valid email</p>
+              <input type="email" id="email" name="email" placeholder="email@example.com" aria-describedby="error-subject"/>
+              <p class="error-text hidden" id="error-subject">Please enter a valid email</p>
             </div>
             
             <button type="submit">Get Started For Free</button>
@@ -241,9 +241,9 @@
         </div>
 
         <div class="social-icons">
-          <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
-          <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="social-link" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
         </div>
       </div>
     </div>
