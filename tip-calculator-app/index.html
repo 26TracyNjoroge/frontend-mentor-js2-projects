@@ -8,6 +8,10 @@
   
   <title>Frontend Mentor | Tip calculator app</title>
 
+  <link rel="preload" href="/assets/fonts/space-mono-v17-latin-700.woff2" as="font" type="font/woff2" crossorigin/>
+
+  <link rel="stylesheet" href="/css/styles.css">
+
 </head>
 <body>
   <main class="container">
@@ -20,17 +24,21 @@
           <input type="text" class="bill-input" id="bill">
         </div>
 
-        <div class="select-bill-sect">
-          <div class="five-percent">5%</div>
-          <div class="ten-percent">10%</div>
-          <div class="fifteen-percent">15%</div>
-          <div class="twenty-five-percent">25%</div>
-          <div class="fifty-percent">50%</div>
-          <div class="custom-sect">
-            <label for="tip" class="custom-tip-label">Custom</label>
-            <input type="text" class="tip-input" id="tip">
+        <div class="select-tip">
+          <h2 class="select-tip-heading">Select Tip %</h2>
+          <div class="select-bill-sect">
+          <div class="five percent">5%</div>
+          <div class="ten percent">10%</div>
+          <div class="fifteen percent">15%</div>
+          <div class="twenty-five percent">25%</div>
+          <div class="fifty percent">50%</div>
+          <div class="custom-sect percent">
+            <!-- <label for="tip" class="custom-tip-label">Custom</label> -->
+            <!-- <input type="text" class="tip-input" id="tip"> -->
           </div>
         </div>
+        </div>
+        
 
          <div class="people-input-sect">
           <label for="people" class="bill-input-label">Number of people</label>
@@ -42,7 +50,6 @@
         <div class="tip-amount">
           <div class="tip-amount-p">
             <p class="tip-amount-heading">Tip Amount</p>
-            <br/>
             <p class="tip-amt-per-person">/ person</p>
           </div>
           <div class="tip">$4.27</div>
@@ -51,7 +58,6 @@
         <div class="total-amount">
           <div class="total-amount-p">
             <p class="total-amount-heading">Total</p>
-            <br/>
             <p class="total-amt-per-person">/ person</p>
           </div>
           <div class="total">$32.79</div>

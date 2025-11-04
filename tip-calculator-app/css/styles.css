@@ -1,0 +1,102 @@
+:root {
+    /*Primary  */
+    --Green-400: hsl(172, 67%, 45%);
+
+    /*Neutral*/
+    --Green-900: hsl(183, 100%, 15%);
+    --Grey-500: hsl(186, 14%, 43%);
+    --Grey-400: hsl(184, 14%, 56%);
+    --Grey-200: hsl(185, 41%, 84%);
+    --Grey-50: hsl(189, 47%, 97%);
+    --White: hsl(0, 100%, 100%);
+}
+
+*, 
+::before,
+::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2,
+h3, h4,
+h5, h6 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-wrap: balance; 
+}
+
+img,
+picture,
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border-color: transparent;
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/space-mono-v17-latin-700.woff2'); 
+}
+
+body {
+    font-family: 'Space Mono', serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    background-color: var(--Grey-200);
+}
+
+.calc-image {
+    width: 100px;
+    margin: 40px auto;
+}
+
+.calc-wrapper {
+    background-color: var(--White);
+    border-radius: 16px;
+    width: 96%;
+    margin: 0 auto;
+    max-width: 350px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    background-color: var(--Grey-50);
+    border-radius: 6px;
+}
+
+.select-bill-sect {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.percent {
+    /* width: 80%; */
+    background-color: var(--Green-900);
+    text-align: center;
+    color: var(--White);
+    padding: 0.3rem 0;
+    border: none;
+    border-radius: 9px;
+}
+
+.custom-tip-label {
+    display: none;
+}
