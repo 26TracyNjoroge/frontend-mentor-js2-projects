@@ -18,59 +18,65 @@
     <img src="/assets/images/logo.svg" alt="logo" class="calc-image">
 
     <div class="calc-wrapper">
-      <section class="left-section">
-        <div class="bill-input-sect">
-          <label for="bill" class="bill-input-label">Bill</label>
-          <input type="text" class="bill-input" id="bill">
-        </div>
-
-        <div class="select-tip">
-          <h2 class="select-tip-heading">Select Tip %</h2>
-          <div class="select-bill-sect">
-          <div class="five percent">5%</div>
-          <div class="ten percent">10%</div>
-          <div class="fifteen percent">15%</div>
-          <div class="twenty-five percent">25%</div>
-          <div class="fifty percent">50%</div>
-          <div class="custom-sect percent">
-            <!-- <label for="tip" class="custom-tip-label">Custom</label> -->
-            <!-- <input type="text" class="tip-input" id="tip"> -->
+      <div class="input-section">
+        <section class="bill-input-sect">
+          <label for="bill" class="input-label">Bill</label>
+          <div class="input-wrap">
+            <input type="number" placeholder="0" class="bill-input grey" id="bill">
+            <img src="/assets/images/icon-dollar.svg" alt="Dollar Icon" class="dollar-icon"/>
           </div>
-        </div>
-        </div>
+        </section>
+
+        <fieldset class="select-tip">
+          <legend class="select-tip-heading">Select Tip %</legend>
+          <div class="select-bill-sect">
+            <button class="tip-btn">5%</button>
+            <button class="tip-btn">10%</button>
+            <button class="tip-btn">15%</button>
+            <button class="tip-btn">25%</button>
+            <button class="tip-btn">50%</button>
+            <div class="custom-sect">
+              <label for="cuustom-tip" class="custom-tip-label">Custom</label>
+              <input type="number" id="custom-tip" class="custom-tip" placeholder="Custom">
+            </div>
+          </div>
+        </fieldset>
         
 
-         <div class="people-input-sect">
-          <label for="people" class="bill-input-label">Number of people</label>
-          <input type="text" class="people-input" id="people">
-        </div>
-      </section>
+        <section class="people-input-sect">
+          <label for="people" class="input-label">Number of people</label>
+          <div class="input-wrap">
+            <input type="number" class="people-input grey" id="people" placeholder="0">
+            <img src="/assets/images/icon-person.svg" alt="Person Icon" class="person-icon"/>
+          </div>
+        </section>
+      </div>
 
-      <section class="right-section">
-        <div class="tip-amount">
+      <div class="results-section">
+        <section class="tip-amount">
           <div class="tip-amount-p">
             <p class="tip-amount-heading">Tip Amount</p>
             <p class="tip-amt-per-person">/ person</p>
           </div>
-          <div class="tip">$4.27</div>
-        </div>
+          <output class="tip" id="tip">$4.27</output>
+        </section>
 
-        <div class="total-amount">
+        <section class="total-amount">
           <div class="total-amount-p">
             <p class="total-amount-heading">Total</p>
             <p class="total-amt-per-person">/ person</p>
           </div>
-          <div class="total">$32.79</div>
-        </div>
+          <output class="total" id="total">$32.79</output>
+        </section>
 
         <button class="reset-btn">Reset</button>
-      </section>
+      </div>
     </div>
   </main>
   
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://github.com/26TracyNjoroge">Tracy Njoroge</a>.
+  </footer>
 </body>
 </html>
